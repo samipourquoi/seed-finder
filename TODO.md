@@ -61,10 +61,11 @@ As takers their responsibility is it to never let the queue run completely empty
 ### TODO Computation Distribution Tasks
 
 - Make computation queue that contains possible tasks
+- Make socket communication for the client/server architecture
+  - Heartbeat, Authentification, Computation Task Providing, Results Providing
 - Make computation divider that divides the possible larger tasks into subtasks for takers
 - Make computation requester tht checks if the queue is approaching its closure and requests new computation tasks
 - Make computation tracker that tracks by which taker calculations were/are made
-- Make socket communication for the client/server architecture
-  - Heartbeat, Authentification, Computation Task Providing, Results Providing
-- Make computation balancer that balances the distribution of potential search tasks and expanding search tasks among the takers
 - Make computation redistributor that redistributes a task from a taker that takes too long or lost connection
+- Make the role archetypes: calculators, root distributors and redistributors.
+- Make computation balancer that balances the distribution of potential search tasks and expanding search tasks among the takers
